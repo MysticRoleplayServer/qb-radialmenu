@@ -455,6 +455,15 @@ Config.VehicleSeats = {
     items = {}
 }
 
+Config.VehicleOptions = {
+    id = 'openmenu',
+    title = 'Control Menu',
+    icon = 'car',
+    type = 'client',
+    event = 'vehcontrol:openExternal',
+    shouldClose = true
+}
+
 Config.JobInteractions = {
     ['ambulance'] = {
         {
