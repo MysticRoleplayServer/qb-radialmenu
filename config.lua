@@ -1,6 +1,6 @@
 Config = {}
 Config.Keybind = 'F1'           -- FiveM Keyboard, this is registered keymapping, so needs changed in keybindings if player already has this mapped.
-Config.Toggle = false           -- use toggle mode. False requires hold of key
+Config.Toggle = true           -- use toggle mode. False requires hold of key
 Config.UseWhilstWalking = false -- use whilst walking
 Config.EnableExtraMenu = true
 Config.Fliptime = 15000
@@ -483,7 +483,7 @@ Config.JobInteractions = {
         title = 'Emergency button',
         icon = 'bell',
         type = 'client',
-        event = 'police:client:SendPoliceEmergencyAlert',
+        event = 'ps-dispatch:client:emsdown',
         shouldClose = true
     }, {
         id = 'escort',
@@ -572,7 +572,7 @@ Config.JobInteractions = {
             title = 'Emergency button',
             icon = 'bell',
             type = 'client',
-            event = 'police:client:SendPoliceEmergencyAlert',
+            event = 'ps-dispatch:client:officerbackup',
             shouldClose = true
         }, {
         id = 'checkvehstatus',
