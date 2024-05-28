@@ -584,14 +584,14 @@ Config.JobInteractions = {
             event = 'ps-dispatch:client:officerbackup',
             shouldClose = true
         }, {
-            id = 'checkvehstatus',
-            title = 'Check Tune Status',
-            icon = 'circle-info',
+            id = 'checkinsurance', -- m-Insurance
+            title = 'Check Insurance',
+            icon = 'car',
             type = 'client',
-            event = 'qb-tunerchip:client:TuneStatus',
+            event = 'm-Insurance:Client:CheckVehicleInsurance',
             shouldClose = true
         }, {
-            id = 'trafficstop',
+            id = 'trafficstop', -- ps-mdt
             title = 'Report Traffic Stop',
             icon = 'radio',
             type = 'client',
