@@ -103,70 +103,52 @@ Config.MenuItems = {
         title = 'General',
         icon = 'rectangle-list',
         items = {
-            {
+            { -- bcs-housing
                 id = 'house',
                 title = 'House Interaction',
                 icon = 'house',
                 items = {
                     {
-                        id = 'givehousekey',
-                        title = 'Give House Keys',
+                        id = 'managehouse',
+                        title = 'Manage Homes',
                         icon = 'key',
                         type = 'client',
-                        event = 'qb-houses:client:giveHouseKey',
+                        event = 'Housing:client:ManageOwnedHomes',
                         shouldClose = true
-                    }, {
-                        id = 'removehousekey',
-                        title = 'Remove House Keys',
-                        icon = 'key',
-                        type = 'client',
-                        event = 'qb-houses:client:removeHouseKey',
-                        shouldClose = true
-                    }, {
+                    },
+                    {
                         id = 'togglelock',
                         title = 'Toggle Doorlock',
                         icon = 'door-closed',
                         type = 'client',
-                        event = 'qb-houses:client:toggleDoorlock',
+                        event = 'Housing:client:LockCurrentHome',
                         shouldClose = true
-                    }, {
+                    },
+                    {
                         id = 'decoratehouse',
                         title = 'Decorate House',
                         icon = 'box',
                         type = 'client',
-                        event = 'qb-houses:client:decorate',
+                        event = 'Housing:client:Furnish',
                         shouldClose = true
-                    }, {
+                    },
+                    {
                         id = 'houseLocations',
                         title = 'Interaction Locations',
                         icon = 'house',
                         items = {
                             {
-                                id = 'setstash',
-                                title = 'Set Stash',
-                                icon = 'box-open',
-                                type = 'client',
-                                event = 'qb-houses:client:setLocation',
-                                shouldClose = true
-                            }, {
                                 id = 'setoutift',
-                                title = 'Set Wardrobe',
+                                title = 'Add Wardrobe',
                                 icon = 'shirt',
                                 type = 'client',
-                                event = 'qb-houses:client:setLocation',
-                                shouldClose = true
-                            }, {
-                                id = 'setlogout',
-                                title = 'Set Logout',
-                                icon = 'door-open',
-                                type = 'client',
-                                event = 'qb-houses:client:setLocation',
+                                event = 'Housing:client:CreateWardrobe',
                                 shouldClose = true
                             }
                         }
                     }
                 }
-            }, {
+            }            }, {
                 id = 'clothesmenu',
                 title = 'Clothing',
                 icon = 'shirt',
