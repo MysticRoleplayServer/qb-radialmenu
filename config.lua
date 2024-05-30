@@ -115,24 +115,21 @@ Config.MenuItems = {
                         type = 'client',
                         event = 'Housing:client:ManageOwnedHomes',
                         shouldClose = true
-                    },
-                    {
+                    }, {
                         id = 'togglelock',
                         title = 'Toggle Doorlock',
                         icon = 'door-closed',
                         type = 'client',
                         event = 'Housing:client:LockCurrentHome',
                         shouldClose = true
-                    },
-                    {
+                    }, {
                         id = 'decoratehouse',
                         title = 'Decorate House',
                         icon = 'box',
                         type = 'client',
                         event = 'Housing:client:Furnish',
                         shouldClose = true
-                    },
-                    {
+                    }, {
                         id = 'houseLocations',
                         title = 'Interaction Locations',
                         icon = 'house',
@@ -148,7 +145,8 @@ Config.MenuItems = {
                         }
                     }
                 }
-            }            }, {
+            }, -- This closing bracket was missing
+            {
                 id = 'clothesmenu',
                 title = 'Clothing',
                 icon = 'shirt',
@@ -276,7 +274,7 @@ Config.MenuItems = {
                 }
             }
         }
-    },
+    }
 }
 
 Config.VehicleDoors = {
