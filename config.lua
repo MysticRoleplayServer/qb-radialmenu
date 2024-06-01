@@ -277,55 +277,13 @@ Config.MenuItems = {
     }
 }
 
-Config.VehicleDoors = {
-    id = 'vehicledoors',
-    title = 'Vehicle Doors',
-    icon = 'car-side',
-    items = {
-        {
-            id = 'door0',
-            title = 'Drivers door',
-            icon = 'car-side',
-            type = 'client',
-            event = 'qb-radialmenu:client:openDoor',
-            shouldClose = false
-        }, {
-            id = 'door4',
-            title = 'Hood',
-            icon = 'car',
-            type = 'client',
-            event = 'qb-radialmenu:client:openDoor',
-            shouldClose = false
-        }, {
-            id = 'door1',
-            title = 'Passengers door',
-            icon = 'car-side',
-            type = 'client',
-            event = 'qb-radialmenu:client:openDoor',
-            shouldClose = false
-        }, {
-            id = 'door3',
-            title = 'Right rear',
-            icon = 'car-side',
-            type = 'client',
-            event = 'qb-radialmenu:client:openDoor',
-            shouldClose = false
-        }, {
-            id = 'door5',
-            title = 'Trunk',
-            icon = 'car',
-            type = 'client',
-            event = 'qb-radialmenu:client:openDoor',
-            shouldClose = false
-        }, {
-            id = 'door2',
-            title = 'Left rear',
-            icon = 'car-side',
-            type = 'client',
-            event = 'qb-radialmenu:client:openDoor',
-            shouldClose = false
-        }
-    }
+Config.VehicleDoors = { -- vehcontrol
+    id = 'openmenu',
+    title = 'Control Menu',
+    icon = 'car',
+    type = 'client',
+    event = 'vehcontrol:openExternal',
+    shouldClose = true
 }
 
 Config.VehicleExtras = {
@@ -428,20 +386,12 @@ Config.VehicleExtras = {
     }
 }
 
+
 Config.VehicleSeats = {
     id = 'vehicleseats',
     title = 'Vehicle Seats',
     icon = 'chair',
     items = {}
-}
-
-Config.VehicleOptions = {
-    id = 'openmenu',
-    title = 'Control Menu',
-    icon = 'car',
-    type = 'client',
-    event = 'vehcontrol:openExternal',
-    shouldClose = true
 }
 
 Config.JobInteractions = {
