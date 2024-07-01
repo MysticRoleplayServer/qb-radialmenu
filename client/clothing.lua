@@ -699,19 +699,19 @@ local Extras = {
 		Drawable = 11,
 		Table = {
 			Standalone = true,
-			male = 252,
-			female = 74,
+			male = 15,
+			female = 2,
 			Extra = {
 				{ Drawable = 8,  Id = 15, Tex = 0, Name = 'Extra Undershirt' },
 				{ Drawable = 3,  Id = 15, Tex = 0, Name = 'Extra Gloves' },
-				{ Drawable = 10, Id = 0,  Tex = 0, Name = 'Extra Decals' },
+				{ Drawable = 10, Id = 150,  Tex = 0, Name = 'Extra Decals' },
 			}
 		},
 		Emote = { Dict = 'clothingtie', Anim = 'try_tie_negative_a', Move = 51, Dur = 1200 }
 	},
 	['Pants'] = {
 		Drawable = 4,
-		Table = { Standalone = true, male = 61, female = 14 },
+		Table = { Standalone = true, male = 122, female = 17 },
 		Emote = { Dict = 're@construction', Anim = 'out_of_breath', Move = 51, Dur = 1300 }
 	},
 	['Bagoff'] = {
