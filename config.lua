@@ -11,13 +11,13 @@ Config.MenuItems = {
         title = 'Citizen',
         icon = 'user',
         items = {
-            {
-                id = 'givenum',
-                title = 'Give Contact Details',
-                icon = 'address-book',
-                type = 'client',
-                event = 'qb-phone:client:GiveContactDetails',
-                shouldClose = true
+            -- {
+            --     id = 'givenum',
+            --     title = 'Give Contact Details',
+            --     icon = 'address-book',
+            --     type = 'client',
+            --     event = 'qb-phone:client:GiveContactDetails',
+            --     shouldClose = true
             }, {
                 id = 'getintrunk',
                 title = 'Get In Trunk',
@@ -25,20 +25,20 @@ Config.MenuItems = {
                 type = 'client',
                 event = 'qb-trunk:client:GetIn',
                 shouldClose = true
-            }, {
-                id = 'cornerselling',
-                title = 'Corner Selling',
-                icon = 'cannabis',
-                type = 'client',
-                event = 'qb-drugs:client:cornerselling',
-                shouldClose = true
-            }, {
-                id = 'togglehotdogsell',
-                title = 'Hotdog Selling',
-                icon = 'hotdog',
-                type = 'client',
-                event = 'qb-hotdogjob:client:ToggleSell',
-                shouldClose = true
+            -- }, {
+            --     id = 'cornerselling',
+            --     title = 'Corner Selling',
+            --     icon = 'cannabis',
+            --     type = 'client',
+            --     event = 'qb-drugs:client:cornerselling',
+            -- --     shouldClose = true
+            -- }, {
+            --     id = 'togglehotdogsell',
+            --     title = 'Hotdog Selling',
+            --     icon = 'hotdog',
+            --     type = 'client',
+            --     event = 'qb-hotdogjob:client:ToggleSell',
+            --     shouldClose = true
             }, {
                 id = 'interactions',
                 title = 'Interaction',
@@ -478,33 +478,33 @@ Config.JobInteractions = {
             shouldClose = true
         }
     },
-    ['tow'] = {
-        {
-            id = 'togglenpc',
-            title = 'Toggle NPC',
-            icon = 'toggle-on',
-            type = 'client',
-            event = 'jobs:client:ToggleNpc',
-            shouldClose = true
-        }, {
-            id = 'towvehicle',
-            title = 'Tow vehicle',
-            icon = 'truck-pickup',
-            type = 'client',
-            event = 'qb-tow:client:TowVehicle',
-            shouldClose = true
-        }
-    },
-    ['mechanic'] = {
-        {
-            id = 'towvehicle',
-            title = 'Tow vehicle',
-            icon = 'truck-pickup',
-            type = 'client',
-            event = 'qb-tow:client:TowVehicle',
-            shouldClose = true
-        }
-    },
+    -- ['tow'] = {
+    --     {
+    --         id = 'togglenpc',
+    --         title = 'Toggle NPC',
+    --         icon = 'toggle-on',
+    --         type = 'client',
+    --         event = 'jobs:client:ToggleNpc',
+    --         shouldClose = true
+    --     }, {
+    --         id = 'towvehicle',
+    --         title = 'Tow vehicle',
+    --         icon = 'truck-pickup',
+    --         type = 'client',
+    --         event = 'qb-tow:client:TowVehicle',
+    --         shouldClose = true
+    --     }
+    -- },
+    -- ['mechanic'] = {
+    --     {
+    --         id = 'towvehicle',
+    --         title = 'Tow vehicle',
+    --         icon = 'truck-pickup',
+    --         type = 'client',
+    --         event = 'qb-tow:client:TowVehicle',
+    --         shouldClose = true
+    --     }
+    -- },
     ['police'] = {
         {
             id = 'emergencybutton',
@@ -634,16 +634,16 @@ Config.JobInteractions = {
             }
         }
     },
-    ['hotdog'] = {
-        {
-            id = 'togglesell',
-            title = 'Toggle sell',
-            icon = 'hotdog',
-            type = 'client',
-            event = 'qb-hotdogjob:client:ToggleSell',
-            shouldClose = true
-        }
-    }
+    -- ['hotdog'] = {
+    --     {
+    --         id = 'togglesell',
+    --         title = 'Toggle sell',
+    --         icon = 'hotdog',
+    --         type = 'client',
+    --         event = 'qb-hotdogjob:client:ToggleSell',
+    --         shouldClose = true
+    --     }
+    -- }
 }
 
 Config.TrunkClasses = {
