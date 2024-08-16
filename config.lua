@@ -91,7 +91,7 @@ Config.MenuItems = {
                         title = 'Hostage',
                         icon = 'child',
                         type = 'client',
-                        event = 'A5:Client:TakeHostage',
+                        event = 'TakeHostage:client:hostage',
                         shouldClose = true
                     }
                 }
